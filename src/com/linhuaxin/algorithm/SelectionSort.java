@@ -1,5 +1,7 @@
 package com.linhuaxin.algorithm;
 
+import java.util.Arrays;
+
 public class SelectionSort {
 
     public static void sort(int[] arr, int n) {
@@ -16,5 +18,11 @@ public class SelectionSort {
                 arr[minIndex] = temp;
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {1, 3, 5, 9, 7};
+        sort(arr, arr.length);
+        System.out.println(Arrays.toString(arr));
     }
 }
