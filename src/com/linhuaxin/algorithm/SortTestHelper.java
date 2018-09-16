@@ -15,6 +15,17 @@ public class SortTestHelper {
         return arr;
     }
 
+    /**
+     * 复制一个整型数组
+     */
+    public static Integer[] copyIntArray(Integer[] a, int n) {
+        Integer[] arr = new Integer[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = a[i];
+        }
+        return arr;
+    }
+
     public static <T> void printArray(T arr[], int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
