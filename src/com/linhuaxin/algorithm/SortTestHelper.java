@@ -57,12 +57,16 @@ public class SortTestHelper {
      * 计算排序时间
      */
     public static void testSort(String sortName, Sortable sortable, int[] arr, int n) {
-        long startTime = System.currentTimeMillis();
+        long startTime = System.nanoTime();
         sortable.sort(arr, n);
-        long endTime = System.currentTimeMillis();
+        long endTime = System.nanoTime();
 
         assert SortTestHelper.isSorted(arr, n);
-        System.out.println(sortName + " : " + (endTime - startTime) + "ms");
+
+        while (sortName.length() < 20) {
+            sortName += " ";
+        }
+        System.out.println(sortName + " : " + (endTime - startTime) + "ns");
     }
 
     /**
