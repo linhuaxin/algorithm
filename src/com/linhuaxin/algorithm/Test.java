@@ -6,7 +6,7 @@ public class Test {
         int n = 50000;
         int arr[] = SortTestHelper.generateNearlyOrderArray(n, 10);
         int arr2[] = SortTestHelper.copyIntArray(arr, n);
-        SortTestHelper.testSort("Insertion Sort", new InsertionSort(), arr, n);
+        SortTestHelper.testSort("Merge Sort BU", new MergeSortBU(), arr, n);
         SortTestHelper.testSort("Merge Sort", new MergeSort(), arr2, n);
     }
 }

@@ -3,7 +3,7 @@ package com.linhuaxin.algorithm;
 public class MergeSort implements Sortable {
 
     // 将arr[l...mid]和arr[mid+1...r]两部分进行归并
-    private void __merge(int[] arr, int l, int mid, int r) {
+    public static void __merge(int[] arr, int l, int mid, int r) {
         Integer[] aux = new Integer[r - l + 1];
 
         for (int i = l; i <= r; i++) {
